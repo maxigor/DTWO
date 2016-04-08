@@ -29,6 +29,11 @@ header
             a
                color: $white
                font-size: 1.1em
+               &:hover
+                  border-bottom: 1font-px solid $white
+                  padding-bottom: 4px
+                  @include transition(all 0.6s linear)
+
    .header__call
       height: 31em
       width: 50%
@@ -43,7 +48,7 @@ header
       .header__call--button
          background-color: $green
          color: $white
-         font-size: 18px
+         font-size: em(18px)
          text-transform: uppercase
          letter-spacing: 1px
          border: none
@@ -53,7 +58,10 @@ header
          padding-right: 0px
          height: 48px
          margin-top: 2.5em
+         &:hover > .header__call--arrow
+            padding-left: 10px
+            @include transition(all 0.6s linear)
 
       .header__call--arrow
-         font-size: 22px
+         font-size: em(22px)
          color: $white

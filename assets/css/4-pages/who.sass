@@ -2,7 +2,7 @@
    height: 1342px
    h2
       font-family: 'Uni-Sans-Heavy'
-      font-size: 48px
+      font-size: em(48px)
       letter-spacing: 5px
       text-align: center
       color: #444561
@@ -15,7 +15,7 @@
 
 .who__describe
    font-family: 'Source Sans Pro'
-   font-size: 24px
+   font-size: em(24px)
    text-align: center
    color: #6b6c79
    margin: 0px
@@ -27,7 +27,7 @@
    margin-bottom: 93px
    a
       font-family: 'Source Sans Pro'
-      font-size: 24px
+      font-size: em(24px)
       color: $green
       text-decoration: underline
       text-align: center
@@ -44,7 +44,7 @@
 
 .who--lady__finally
    font-family: 'Source Sans Pro Semi Bold Italic'
-   font-size: 18px
+   font-size: em(18px)
    color: $white
    position: absolute
    top: 52px
@@ -52,7 +52,7 @@
 
 .who--lady__h3
    font-family: 'Uni-Sans-Heavy'
-   font-size: 48px
+   font-size: em(48px)
    color: $white
    letter-spacing: 8px
    position: absolute
@@ -65,7 +65,7 @@
 .who--lady_button
    background-color: #049294
    font-family: 'Uni-Sans-Heavy'
-   font-size: 18px
+   font-size: em(18px)
    color: $white
    border: none
    border-radius: 0
@@ -77,12 +77,19 @@
    bottom: 79px
    &:hover
       color: $white
+      transform: scale(1.2)
+      transform: rotate3d(10, 7, 10, -11deg)
+      @include transition(all 0.6s linear)
+   &:hover > .arrow
+      padding-left: 10px
+      @include transition(all 0.6s linear)
    .arrow
       color: $white
-      font-size: 17px
+      font-size: em(17px)
       position: absolute
       top: 7px
       left: 169px
+
 
 .who--lady__hr
    display: block
