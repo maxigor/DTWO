@@ -134,7 +134,7 @@ gulp.task('styles-deploy', function() {
                 .pipe(concat('main.css'))
                 .pipe(minifyCSS())
                 //where to save our final, compressed css file
-                .pipe(gulp.dest('css'));
+                .pipe(gulp.dest('dist/css'));
 });
 
 //basically just keeping an eye on all HTML files
